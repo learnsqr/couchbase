@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Ionic SDK</title>
+		<title>Couchbase Administration and Development</title>
 
-		<meta name="description" content="Ionic SDK - Practical course for mastering Ionic">
+		<meta name="description" content="Couchbase Administration and Development">
 		<meta name="author" content="Agustín F. Calderón M.">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -34,8 +34,8 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-		
-		
+
+
 		<style type="text/css">
             /* overrides */
             /*body {
@@ -56,7 +56,7 @@
             .mysql-color {
                 color: #e97b00;
             }
-            
+
 			.zf2-color {
                 color: #e97b00;
             }
@@ -79,7 +79,7 @@
             .reveal pre code {
                 max-height: 600px;
             }
-            
+
 .reveal table {
   margin: auto;
   border-collapse: collapse;
@@ -99,8 +99,8 @@
 
 
         </style>
-        
-        
+
+
 	</head>
 
 	<body>
@@ -134,22 +134,22 @@
                         />
     </h1>
 </section>
-<!-- ************************************ TEMPLATE ************************************************** -->		
+<!-- ************************************ TEMPLATE ************************************************** -->
 <!--
-<section>         
+<section>
 <section data-markdown >
 <script type="text/template">
 ## <span class="mysql-color">Introducción</span>
-Gestor de Bases de Datos  
-Base de datos opensource mas popular  
-70,000 descargas diarias  
-En constante desarrollo desde 1995  
+Gestor de Bases de Datos
+Base de datos opensource mas popular
+70,000 descargas diarias
+En constante desarrollo desde 1995
 </script>
 </section>
 -->
-<!-- ************************************ BEGIN ************************************************** -->	
-              
-<!-- ************************************ NEXT ************************************************** -->	              
+<!-- ************************************ BEGIN ************************************************** -->
+
+<!-- ************************************ NEXT ************************************************** -->
 
 <section data-markdown>
 <script type="text/template">
@@ -161,18 +161,18 @@ En constante desarrollo desde 1995
 - [@Ionicframework](https://twitter.com/ionicframework)
 
 </script>
-</section>	
+</section>
 
 <section data-markdown>
 <script type="text/template">
 ## <span class="mysql-color">Que es <span class="zf-color">Ionic</span></span>
-- Framework open source 
-- Basado en HTML5, CSS3 y Javascript 
+- Framework open source
+- Basado en HTML5, CSS3 y Javascript
 - Aplicaciones híbridas.
-- <span class="zf2-color">NO es una librería responsive</span> 
+- <span class="zf2-color">NO es una librería responsive</span>
 - Ionic es un SDK para <span class="zf-color">mejorar la UI</span> de una aplicación web en un dispositivo móvil
 </script>
-</section>			
+</section>
 
 <section data-markdown>
 <script type="text/template">
@@ -184,17 +184,17 @@ En constante desarrollo desde 1995
 Note:
 http://ionicframework.com/docs/overview/#browser-support
 </script>
-</section>	
+</section>
 
-		
+
 
 <section>
 <section data-markdown>
 <script type="text/template">
 ## <span class="mysql-color"><span class="zf-color">The State</span> of Hybrid Development: Facebook quote</span>
 <blockquote cite="https://techcrunch.com/2012/09/11/mark-zuckerberg-our-biggest-mistake-with-mobile-was-betting-too-much-on-html5/">
-	"When I’m introspective about the last few years I think the biggest mistake that we made, as a company, 
-	is betting too much on HTML5 as opposed to native… 
+	"When I’m introspective about the last few years I think the biggest mistake that we made, as a company,
+	is betting too much on HTML5 as opposed to native…
 	because it just wasn’t there."
 </blockquote>
 Mark Zuckerberg, September 2012
@@ -208,8 +208,8 @@ https://techcrunch.com/2012/09/11/mark-zuckerberg-our-biggest-mistake-with-mobil
 <script type="text/template">
 ## <span class="mysql-color"><span class="zf-color">The State</span> of Hybrid Development: LinkedIn quote</span>
 <blockquote cite="http://venturebeat.com/2013/04/17/linkedin-mobile-web-breakup/">
-	"There are a few things that are critically missing. One is tooling support 
-	—having a debugger that actually works, performance tools that tell you 
+	"There are a few things that are critically missing. One is tooling support
+	—having a debugger that actually works, performance tools that tell you
 	where the memory is running out."
 </blockquote>
 Kiran Prasad, LinkedIn’s senior director for mobile engineering, April 2013
@@ -217,13 +217,13 @@ Kiran Prasad, LinkedIn’s senior director for mobile engineering, April 2013
 Note:
 https://techcrunch.com/2012/09/11/mark-zuckerberg-our-biggest-mistake-with-mobile-was-betting-too-much-on-html5/
 </script>
-</section>	
+</section>
 
 <section data-markdown>
 <script type="text/template">
 ## <span class="mysql-color"><span class="zf-color">The State</span> of Hybrid Development: Vision Mobile quote</span>
 <blockquote cite="http://venturebeat.com/2013/04/17/linkedin-mobile-web-breakup/">
-	"Our research on HTML5 vs native apps in Q3 2013 showed that the key issue in HTML5 development, 
+	"Our research on HTML5 vs native apps in Q3 2013 showed that the key issue in HTML5 development,
 	is not performance or API reach, but the lack of mature development tools."
 </blockquote>
 State of The Developer Nation, Q1 2014
@@ -231,7 +231,7 @@ State of The Developer Nation, Q1 2014
 Note:
 https://www.visionmobile.com/
 </script>
-</section>	
+</section>
 
 <section data-markdown>
 <script type="text/template">
@@ -241,10 +241,10 @@ https://www.visionmobile.com/
 
 
 Note:
-Hype: generally the enthusiastic and strong feeling around new forms of media and technology in 
+Hype: generally the enthusiastic and strong feeling around new forms of media and technology in
 which people expect everything will be modified for the better
 </script>
-</section>	
+</section>
 
 <section data-markdown>
 <script type="text/template">
@@ -256,28 +256,28 @@ which people expect everything will be modified for the better
 Note:
 http://ionicframework.com/docs/overview/#browser-support
 </script>
-</section>	
+</section>
 
-</section>	
+</section>
 
 <section data-markdown>
 <script type="text/template">
 ## <span class="mysql-color"><span class="zf-color">Hybrid</span> applications</span>
-- Modern Web standards for modern mobile devices 
+- Modern Web standards for modern mobile devices
 - <strong>HTML5</strong> that acts like native
 - Web wrapped in  <strong>native layer</strong>
 - Direct access to <strong>native APIs</strong>
 - Familiar <strong>web dev</strong> environment
 - A <strong>single code base</strong> (web platform!)
-<br/>  
+<br/>
 <span class="zf-color">Ionic 2</span>: Windows 10 Universal App, iOS 8+, Android 4.4+.
 
 
 Note:
 http://ionicframework.com/docs/overview/#browser-support
 </script>
-</section>	
-		
+</section>
+
 <section data-markdown>
 <script type="text/template">
 ## <span class="mysql-color">Ventajas de Ionic</span>
@@ -289,7 +289,7 @@ http://ionicframework.com/docs/overview/#browser-support
 Note:
 http://ionicframework.com/docs/overview/#browser-support
 </script>
-</section>		
+</section>
 
 <section data-markdown>
 <script type="text/template">
@@ -301,7 +301,7 @@ http://ionicframework.com/docs/overview/#browser-support
 Note:
 http://ionicframework.com/docs/overview/#browser-support
 </script>
-</section>				
+</section>
 
 <!-- ************************************ END ************************************************** -->
 <!-- ************************************ END ************************************************** -->
@@ -313,7 +313,7 @@ http://ionicframework.com/docs/overview/#browser-support
 
 		<script src="../assets/vendor/reveal.js/lib/js/head.min.js"></script>
 		<script src="../assets/vendor/reveal.js/js/reveal.min.js"></script>
-	
+
 
 		<script>
 
